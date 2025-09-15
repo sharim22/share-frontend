@@ -17,7 +17,7 @@ const AccessCodeViewer = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:1234/access/code', payload, {
+      const response = await axios.post('https://share-backend-swart.vercel.app/access/code', payload, {
         headers: {
           "Content-Type": "application/json",
         },
