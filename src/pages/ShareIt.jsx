@@ -202,7 +202,7 @@ const ShareIt = () => {
         })
 
         try {
-            const response = await axios.post("https://share-backend-swart.vercel.app/upload/files", formData, {
+            const response = await axios.post("https://share-backend-mu.vercel.app/upload/files", formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },
@@ -224,7 +224,7 @@ const ShareIt = () => {
         setIsUploading(true)
 
         try {
-            const response = await axios.post("https://share-backend-swart.vercel.app/upload/text", {
+            const response = await axios.post("https://share-backend-mu.vercel.app/upload/text", {
                 textContent: textContent
             }, {
                 headers: {
@@ -269,7 +269,7 @@ const ShareIt = () => {
         }
 
         try {
-            const response = await axios.post('https://share-backend-swart.vercel.app/access/code', payload, {
+            const response = await axios.post('https://share-backend-mu.vercel.app/access/code', payload, {
                 headers: {
                     "Content-Type": "application/json",
                 },

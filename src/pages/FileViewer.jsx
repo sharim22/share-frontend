@@ -22,7 +22,7 @@ const FileViewer = () => {
     }
 
     try {
-      const response = await axios.post('https://share-backend-swart.vercel.app/access', payload, {
+      const response = await axios.post('https://share-backend-mu.vercel.app/access', payload, {
         headers: {
           "Content-Type": "application/json",
         },
